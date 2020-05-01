@@ -5,7 +5,7 @@ using SimpleModular.Core;
 
 namespace SimpleModular.First
 {
-    public class StartUp : IModule
+    public class Startup : IModule
     {
         public void ConfigureServices(IServiceCollection services)
         {

@@ -14,7 +14,12 @@ namespace TestModule
 
         public void ConfigureServices(IServiceCollection services)
         {
-            throw new NotImplementedException();
+            services.AddSingleton<TestService>();
         }
+    }
+
+    public class TestService
+    {
+        public string Get() => "Hello from TestService";
     }
 }
