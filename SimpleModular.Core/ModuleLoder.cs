@@ -1,25 +1,25 @@
 ﻿using System.Reflection;
 using System.Runtime.Loader;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace SimpleModular.Core
 {
     public class ModuleLoder
     {
-        public static Assembly Load()
+        private readonly ModuleLoderConfig _config;
+        public ModuleLoder(ModuleLoderConfig config)
         {
-            string path = @"D:\GItHub\SimpleModularApi\SimpleModular.First\bin\Debug\net5.0\SimpleModular.First.dll";
-
-            var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(path);
+            _config = config;
+        }
+        public Assembly Load()
+        {
+            var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(_config.Path);
 
             return assembly;
         }
     }
-    public static class ServiceCollectionExtensions
+
+    public class ModuleLoderConfig
     {
-        public static void AddModuleLoader(this IMvcBuilder builder)
-        {
-            builder.AddApplicationPart(ModuleLoder.Load());
-        }
+        public string Path { get; set; }
     }
 }
