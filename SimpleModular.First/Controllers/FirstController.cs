@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SimpleModular.First.Modules;
+using SimpleModular.First.Services;
 
 namespace SimpleModular.First.Controllers
 {

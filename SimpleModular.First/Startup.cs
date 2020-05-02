@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using SimpleModular.Core;
+using SimpleModular.First.Services;
 
 namespace SimpleModular.First
 {

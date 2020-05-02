@@ -1,4 +1,4 @@
-﻿namespace SimpleModular.First
+﻿namespace SimpleModular.First.Services
 {
     public class MessageService
     {
