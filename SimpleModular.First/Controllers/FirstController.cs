@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SimpleModular.First.Modules;
 
 namespace SimpleModular.First.Controllers
 {
@@ -13,7 +14,7 @@ namespace SimpleModular.First.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get() => Ok(_service.Message());
+        public IActionResult Get() => Ok(new FirstResponse() { Message = _service.Message() });
 
     }
 }
