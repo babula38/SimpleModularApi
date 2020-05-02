@@ -1,0 +1,13 @@
+{
+  "Path": "D:\\GItHub\\SimpleModularApi\\TestModule\\bin\\Debug\\net5.0",
+  "modules": [
+    {
+      "name": "TestModule",
+      "enable": "True"
+    },
+    {
+      "name": "Second",
+      "enable": "False"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using SimpleModular.Core;
 using TestModule;
 using Xunit;
 
@@ -11,13 +12,30 @@ namespace SimpleModular.Test
         {
             var services = new ServiceCollection();
 
-            var startupModule = new StartUp();
+            var startupModule = new Startup();
             startupModule.ConfigureServices(services);
 
             var provider = services.BuildServiceProvider();
             var testService = provider.GetRequiredService(typeof(TestService));
-            
+
             Assert.NotNull(testService);
         }
+
+        [Fact]
+        public void Module_loader_should_execute_all_services_of_module()
+        {
+            var services = new ServiceCollection();
+
+            var moduleLoader = new ModuleLoder(GetModuleConfig());
+            moduleLoader.ConfigureServices(services);
+
+            var provider = services.BuildServiceProvider();
+            var testService = provider.GetRequiredService(typeof(TestService));
+
+            Assert.NotNull(testService);
+        }
+
+        private ModuleConfig GetModuleConfig()
+            => new ModuleConfig(TestConfigurationHelper.GetConfiguration());
     }
 }

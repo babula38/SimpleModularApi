@@ -20,6 +20,12 @@ namespace SimpleModular.Api.Host
             Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.ConfigureAppConfiguration(configure =>
+                    {
+                        configure.AddJsonFile("appsettings.json");
+                        configure.AddJsonFile("modules.json");
+                    });
+
                     webBuilder.UseStartup<Startup>();
                 });
     }

@@ -1,0 +1,12 @@
+{
+  "modules": [
+    {
+      "Name": "First",
+      "Enable": "True"
+    },
+    {
+      "Name": "Second",
+      "Enable": "False"
+    }
+  ]
+}

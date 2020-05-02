@@ -5,7 +5,7 @@ using SimpleModular.Core;
 
 namespace TestModule
 {
-    public class StartUp : IModule
+    public class Startup : IModule
     {
         public void Configure(IApplicationBuilder app)
         {
