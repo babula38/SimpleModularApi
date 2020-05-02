@@ -5,13 +5,17 @@ namespace SimpleModular.Core
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddModuleLoader(this IMvcBuilder builder, IConfiguration config)
+        public static IMvcBuilder AddModuleLoader(this IMvcBuilder builder, IServiceCollection services, IConfiguration config)
         {
             var moduleLoader = new ModuleLoder(new ModuleConfig(config));
-            //moduleLoader.Load();
 
             foreach (var item in moduleLoader.Assemblies)
+            {
+                moduleLoader.ConfigureServices(services);
                 builder.AddApplicationPart(item);
+            }
+
+            return builder;
         }
     }
 }

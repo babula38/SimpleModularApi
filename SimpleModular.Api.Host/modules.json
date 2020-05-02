@@ -1,12 +1,13 @@
 {
+  "Path": "D:\\GItHub\\SimpleModularApi\\SimpleModular.First\\bin\\Debug\\net5.0",
   "modules": [
     {
-      "Name": "First",
-      "Enable": "True"
+      "name": "SimpleModular.First",
+      "enable": "True"
     },
     {
-      "Name": "Second",
-      "Enable": "False"
+      "name": "Second",
+      "enable": "False"
     }
   ]
 }

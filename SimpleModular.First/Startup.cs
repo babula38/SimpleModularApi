@@ -9,12 +9,11 @@ namespace SimpleModular.First
     {
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddSingleton<MessageService>();
         }
         public void Configure(IApplicationBuilder app)
         {
-                
-        }
 
+        }
     }
 }

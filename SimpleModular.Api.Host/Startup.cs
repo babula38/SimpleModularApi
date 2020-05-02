@@ -21,22 +21,15 @@ namespace SimpleModular.Api.Host
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            var moduleLoader = new ModuleLoder(new ModuleConfig(_configuration));
-            //moduleLoader.Load();
 
-            var mvcBuilder = services.AddControllers();
-
-            foreach (var item in moduleLoader.Assemblies)
-            {
-                moduleLoader.ConfigureServices(services);
-                mvcBuilder.AddApplicationPart(item);
-            }
-
+            services.AddControllers()
+                    .AddModuleLoader(services, _configuration);
+            //.AddControllersAsServices()
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Simple modular API", Version = "v1" });
             });
         }
 

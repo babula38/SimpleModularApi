@@ -1,11 +1,19 @@
-
 using Microsoft.AspNetCore.Mvc;
 
-[Route("api/[controller]")]
-[ApiController]
-public class FirstController : ControllerBase
+namespace SimpleModular.First.Controllers
 {
-    [HttpGet]
-    public string Get() => "From First module";
+    [Route("api/[controller]")]
+    [ApiController]
+    public class FirstController : ControllerBase
+    {
+        private readonly MessageService _service;
+        public FirstController(MessageService service)
+        {
+            _service = service;
+        }
 
+        [HttpGet]
+        public IActionResult Get() => Ok(_service.Message());
+
+    }
 }
