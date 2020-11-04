@@ -17,13 +17,4 @@ namespace SImpleModular.Calculator.Add
             services.AddTransient<IMathService, MathService>();
         }
     }
-
-    public interface IMathService
-    {
-        int Add(int firstNumber, int secondNumber);
-    }
-    public class MathService : IMathService
-    {
-        public int Add(int firstNumber, int secondNumber) => firstNumber + secondNumber;
-    }
 }
