@@ -24,7 +24,7 @@ namespace SimpleModular.Api.Host
         {
 
             services.AddControllers()
-                    .AddModuleLoader(services, _configuration);
+                    .AddModules(services, _configuration);
             //.AddControllersAsServices()
 
             // Register the Swagger generator, defining 1 or more Swagger documents

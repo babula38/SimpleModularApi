@@ -2,8 +2,8 @@
   "Path": "D:\\GItHub\\SimpleModularApi\\SimpleModular.Api.Host\\Modules",
   "modules": [
     {
-      "name": "SImpleModular.Calculator.Add",
-      "enable": "False"
+      "name": "SimpleModular.Calculator.Add",
+      "enable": "True"
     },
     {
       "name": "SimpleModular.Calculator.Substract",

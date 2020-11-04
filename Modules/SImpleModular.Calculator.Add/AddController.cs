@@ -5,14 +5,22 @@ namespace SImpleModular.Calculator.Add
     [Route("api/add")]
     public class AddController : ControllerBase
     {
+        private readonly IMathService _mathService;
+
+        public AddController(IMathService mathService)
+        {
+            _mathService = mathService;
+        }
+
         [HttpPost]
-        public IActionResult Post(int firstNumber, int secondNumber) => Ok(firstNumber + secondNumber);
+        public IActionResult Post(int firstNumber, int secondNumber)
+            => Ok(_mathService.Add(firstNumber, secondNumber));
 
         [HttpPost("record")]
         public IActionResult Post(AddRequest request)
         {
             var (firstNumber, secondNumber) = request;
-            return Ok(firstNumber + secondNumber);
+            return Ok(_mathService.Add(firstNumber, secondNumber));
         }
     }
 

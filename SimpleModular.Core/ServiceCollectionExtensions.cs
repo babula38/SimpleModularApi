@@ -5,7 +5,7 @@ namespace SimpleModular.Core
 {
     public static class ServiceCollectionExtensions
     {
-        public static IMvcBuilder AddModuleLoader(this IMvcBuilder builder, IServiceCollection services, IConfiguration config)
+        public static IMvcBuilder AddModules(this IMvcBuilder builder, IServiceCollection services, IConfiguration config)
         {
             var moduleLoader = new ModuleLoder(new ModuleConfig(config));
 
