@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <!--Msbuild task to delete a file-->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <!--<Message Text="Project Extension cool= $(OutDir)" Importance="High" />
+    <Delete Files="$(OutDir)\SimpleModular.Core.dll" />
+    <Delete Files="$(OutDir)\SimpleModular.Core.pdb" />-->
+  </Target>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SimpleModular.Core\SimpleModular.Core.csproj" />
+  </ItemGroup>
+</Project>

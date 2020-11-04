@@ -7,9 +7,6 @@
       <ProjectReference Include="..\SimpleModular.Core\SimpleModular.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
   </ItemGroup>
 
