@@ -61,6 +61,12 @@ namespace SimpleModular.Api.Host
             {
                 endpoints.MapControllers();
             });
+
+            var modules = app.ApplicationServices.GetServices<IModule>();
+            foreach (var module in modules)
+            {
+                module.Configure(app);
+            }
         }
     }
 }

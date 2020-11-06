@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SimpleModular.Core;
 using System;
 
-namespace SImpleModular.Calculator.Add
+namespace SImpleModular.Calculator.Substract
 {
     public class Startup : IModule
     {
@@ -14,7 +14,7 @@ namespace SImpleModular.Calculator.Add
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IMathService, MathService>();
+            //services.AddTransient<IMathService, MathService>();
         }
     }
 }

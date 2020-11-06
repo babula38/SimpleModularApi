@@ -34,21 +34,21 @@ namespace SimpleModular.Core
             }
         }
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.BuildServiceProvider();
+        //public void ConfigureServices(IServiceCollection services)
+        //{
+        //    services.BuildServiceProvider();
 
-            foreach (var item in _assemblies)
-            {
-                var startup = item.GetType($"{item.GetName().Name}.Startup");
+        //    foreach (var item in _assemblies)
+        //    {
+        //        var startup = item.GetType($"{item.GetName().Name}.Startup");
 
-                if (typeof(IModule).IsAssignableFrom(startup))
-                {
-                    var module = Activator.CreateInstance(startup) as IModule;
-                    module.ConfigureServices(services);
-                }
-            }
-        }
+        //        if (typeof(IModule).IsAssignableFrom(startup))
+        //        {
+        //            var module = Activator.CreateInstance(startup) as IModule;
+        //            module.ConfigureServices(services);
+        //        }
+        //    }
+        //}
     }
 
     public class ModuleConfig
