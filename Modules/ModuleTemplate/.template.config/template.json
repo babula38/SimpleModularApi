@@ -1,14 +1,26 @@
 {
-    "$schema": "http://json.schemastore.org/template",
-    "author": "Babula",
-    "classifications": ["Web", "WebAPI", "Simple.Modular.API","Module"],
-    "identity": "Simple.Modular.API.Module",
-    "name": "Simple Modular API Module Project",
-    "shortName": "simplemodularapimodule",
-    "tags": {
-      "language": "C#",
-      "type": "project"
-    },
-    "sourceName": "_safeprojectname_",      // replace w/ project name or -n val
-    "defaultName": "simplemodularapiModule"   // Visual Studio default display name
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Babula",
+  "classifications": [
+    "Web",
+    "WebAPI",
+    "Simple.Modular.API",
+    "Module"
+  ],
+  "identity": "Simple.Modular.API.Module",
+  "name": "Simple Modular API Module Project",
+  "shortName": "simplemodularapimodule",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "_safeprojectname_", // replace w/ project name or -n val
+  "defaultName": "simplemodularapiModule", // Visual Studio default display name
+  "symbols": {
+    "parameter1": {
+      "type": "parameter",
+      "defaultValue": "parameter 1",
+      "replaces": "_parameter1_"
+    }
   }
+}
