@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Linq;
 using System.Reflection;
 
 namespace SimpleModular.Core
@@ -8,7 +9,7 @@ namespace SimpleModular.Core
     {
         public static IMvcBuilder AddModules(this IMvcBuilder builder, IServiceCollection services, IConfiguration config)
         {
-            services.BuildServiceProvider();
+            //services.BuildServiceProvider();
             var moduleLoader = new ModuleLoder(new ModuleConfig(config));
 
 
@@ -25,7 +26,11 @@ namespace SimpleModular.Core
         private static void ConfigureServices(IServiceCollection services, Assembly assembly)
         {
             var startup = assembly.GetType($"{assembly.GetName().Name}.Startup");
+            //assembly.GetTypes().SingleOrDefault(x =>
+            //{
+            //    return x.IsAssignableFrom(typeof(IModule));
 
+            //});
             if (typeof(IModule).IsAssignableFrom(startup))
             {
                 var module = System.Activator.CreateInstance(startup) as IModule;

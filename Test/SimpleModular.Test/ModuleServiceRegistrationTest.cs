@@ -27,7 +27,7 @@ namespace SimpleModular.Test
             var services = new ServiceCollection();
 
             var moduleLoader = new ModuleLoder(GetModuleConfig());
-            moduleLoader.ConfigureServices(services);
+            //moduleLoader.ConfigureServices(services);
 
             var provider = services.BuildServiceProvider();
             var testService = provider.GetRequiredService(typeof(TestService));
