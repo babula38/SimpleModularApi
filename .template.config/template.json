@@ -21,5 +21,18 @@
       "defaultValue": "parameter 1",
       "replaces": "_parameter1_"
     }
-  }
+  },
+  "sources": [
+    {
+      "exclude": [
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".template.config/**/*",
+        "**/*.filelist",
+        "**/*.user",
+        "**/*.lock.json",
+        "**/ModuleTemplate/**"
+      ]
+    }
+  ]
 }
