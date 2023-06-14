@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>..\..\SimpleModular.Api.Host\Modules\</OutputPath>
+    <OutputPath>..\..\_safeprojectname_.Api.Host\Modules\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SimpleModular.Core\SimpleModular.Core.csproj" >
+    <ProjectReference Include="..\..\_safeprojectname_.Core\_safeprojectname_.Core.csproj">
       <Private>false</Private>
     </ProjectReference>
   </ItemGroup>

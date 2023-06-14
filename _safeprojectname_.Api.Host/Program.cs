@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace SimpleModular.Api.Host
+namespace _safeprojectname_.Api.Host
 {
     public class Program
     {

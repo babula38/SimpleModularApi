@@ -3,14 +3,14 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using System.Reflection;
 
-namespace SimpleModular.Core
+namespace _safeprojectname_.Core
 {
     public static class ServiceCollectionExtensions
     {
         public static IMvcBuilder AddModules(this IMvcBuilder builder, IServiceCollection services, IConfiguration config)
         {
             //services.BuildServiceProvider();
-            var moduleLoader = new ModuleLoder(new ModuleConfig(config));
+            var moduleLoader = new ModuleLoader(new ModuleConfig(config));
 
 
             foreach (var assembly in moduleLoader.Assemblies)

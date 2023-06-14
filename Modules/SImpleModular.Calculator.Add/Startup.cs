@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using SimpleModular.Core;
+using _safeprojectname_.Core;
 using System;
 
-namespace SImpleModular.Calculator.Add
+namespace _safeprojectname_.Calculator.Add
 {
     public class Startup : IModule
     {

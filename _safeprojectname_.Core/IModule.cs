@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SimpleModular.Core
+namespace _safeprojectname_.Core
 {
     public interface IModule
     {

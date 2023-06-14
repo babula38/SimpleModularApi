@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using SimpleModular.Core;
+using _safeprojectname_.Core;
 
 namespace TestModule
 {

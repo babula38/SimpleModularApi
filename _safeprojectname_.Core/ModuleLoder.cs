@@ -5,13 +5,13 @@ using System.Runtime.Loader;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SimpleModular.Core
+namespace _safeprojectname_.Core
 {
-    public class ModuleLoder
+    public class ModuleLoader
     {
         private readonly List<Assembly> _assemblies = new List<Assembly>();
         private readonly ModuleConfig _config;
-        public ModuleLoder(ModuleConfig config)
+        public ModuleLoader(ModuleConfig config)
         {
             _config = config;
             Load();

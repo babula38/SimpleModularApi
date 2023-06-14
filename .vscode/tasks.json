@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/SimpleModular.Api.Host/SimpleModular.Api.Host.csproj",
+                "${workspaceFolder}/_safeprojectname_.Api.Host/_safeprojectname_.Api.Host.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/SimpleModular.Api.Host/SimpleModular.Api.Host.csproj",
+                "${workspaceFolder}/_safeprojectname_.Api.Host/_safeprojectname_.Api.Host.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/SimpleModular.Api.Host/SimpleModular.Api.Host.csproj",
+                "${workspaceFolder}/_safeprojectname_.Api.Host/_safeprojectname_.Api.Host.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

@@ -2,10 +2,10 @@ using System;
 using System.IO;
 using System.Reflection;
 using Microsoft.Extensions.Configuration;
-using SimpleModular.Core;
+using _safeprojectname_.Core;
 using Xunit;
 
-namespace SimpleModular.Test
+namespace _safeprojectname_.Test
 {
     public class ModuleLoaderTest
     {
@@ -14,7 +14,7 @@ namespace SimpleModular.Test
         {
             var dllName = "TestModule";
             var fileInfo = new FileInfo(@$"..\..\..\..\TestModule\bin\Debug\net5.0\{dllName}.dll");
-            var moduleLoader = new ModuleLoder(new ModuleConfig(GetConfiguration())
+            var moduleLoader = new ModuleLoader(new ModuleConfig(GetConfiguration())
             {
                 //Path = fileInfo.FullName
             });
@@ -25,7 +25,7 @@ namespace SimpleModular.Test
         }
 
         private IConfiguration GetConfiguration() => new ConfigurationBuilder()
-                           .SetBasePath(@"D:\GItHub\SimpleModularApi\SimpleModular.Test")
+                           .SetBasePath(@"D:\GItHub\_safeprojectname_Api\_safeprojectname_.Test")
                            .AddJsonFile("modules.json")
                            .Build();
     }
@@ -34,7 +34,7 @@ namespace SimpleModular.Test
     {
         public static IConfiguration GetConfiguration()
             => new ConfigurationBuilder()
-                .SetBasePath(@"D:\GItHub\SimpleModularApi\SimpleModular.Test")
+                .SetBasePath(@"D:\GItHub\_safeprojectname_Api\_safeprojectname_.Test")
                 .AddJsonFile("modules.json")
                 .Build();
     }

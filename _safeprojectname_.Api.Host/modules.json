@@ -1,0 +1,13 @@
+{
+  "Path": "D:\\GItHub\\_safeprojectname_Api\\_safeprojectname_.Api.Host\\Modules",
+  "modules": [
+    {
+      "name": "_safeprojectname_.Calculator.Add",
+      "enable": "True"
+    },
+    {
+      "name": "_safeprojectname_.Calculator.Substract",
+      "enable": "True"
+    }
+  ]
+}

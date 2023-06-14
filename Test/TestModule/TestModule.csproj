@@ -4,13 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
-  <!--Msbuild task to delete a file-->
+  <!--Msbuild
+  task to delete a file-->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <!--<Message Text="Project Extension cool= $(OutDir)" Importance="High" />
-    <Delete Files="$(OutDir)\SimpleModular.Core.dll" />
-    <Delete Files="$(OutDir)\SimpleModular.Core.pdb" />-->
+    <!--<Message
+    Text="Project Extension cool= $(OutDir)" Importance="High" />
+    <Delete Files="$(OutDir)\_safeprojectname_.Core.dll" />
+    <Delete Files="$(OutDir)\_safeprojectname_.Core.pdb" />-->
   </Target>
   <ItemGroup>
-    <ProjectReference Include="..\..\SimpleModular.Core\SimpleModular.Core.csproj" />
+    <ProjectReference Include="..\..\_safeprojectname_.Core\_safeprojectname_.Core.csproj" />
   </ItemGroup>
 </Project>

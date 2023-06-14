@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SimpleModular.Core\SimpleModular.Core.csproj" />
+    <ProjectReference Include="..\..\_safeprojectname_.Core\_safeprojectname_.Core.csproj" />
     <ProjectReference Include="..\TestModule\TestModule.csproj" />
   </ItemGroup>
 

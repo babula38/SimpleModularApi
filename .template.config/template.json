@@ -8,13 +8,13 @@
   ],
   "identity": "Simple.Modular.API",
   "name": "Simple Modular API Project",
-  "shortName": "simplemodularapi",
+  "shortName": "_safeprojectname_api",
   "tags": {
     "language": "C#",
     "type": "project"
   },
   "sourceName": "_safeprojectname_", // replace w/ project name or -n val
-  "defaultName": "simplemodularapi", // Visual Studio default display name
+  "defaultName": "_safeprojectname_api", // Visual Studio default display name
   "symbols": {
     "parameter1": {
       "type": "parameter",

@@ -5,9 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using SimpleModular.Core;
+using _safeprojectname_.Core;
 
-namespace SimpleModular.Api.Host
+namespace _safeprojectname_.Api.Host
 {
     public class Startup
     {

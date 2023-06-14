@@ -4,7 +4,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-      <ProjectReference Include="..\SimpleModular.Core\SimpleModular.Core.csproj" />
+    <ProjectReference Include="..\_safeprojectname_.Core\_safeprojectname_.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.0" />

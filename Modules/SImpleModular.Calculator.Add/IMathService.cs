@@ -1,4 +1,4 @@
-﻿namespace SImpleModular.Calculator.Add
+﻿namespace _safeprojectname_.Calculator.Add
 {
     public interface IMathService
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace SImpleModular.Calculator.Add
+namespace _safeprojectname_.Calculator.Add
 {
     [Route("api/add")]
     public class AddController : ControllerBase

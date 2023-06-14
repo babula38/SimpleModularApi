@@ -1,4 +1,4 @@
-﻿namespace SImpleModular.Calculator.Add
+﻿namespace _modulename_.Calculator.Add
 {
 
     public class MathService : IMathService

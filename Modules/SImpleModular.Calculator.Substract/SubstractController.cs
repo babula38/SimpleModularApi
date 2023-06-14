@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace SImpleModular.Calculator.Substract
+namespace _safeprojectname_.Calculator.Substract
 {
     [Route("api/substract")]
     public class SubstractController : ControllerBase

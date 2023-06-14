@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using SimpleModular.Core;
+using _safeprojectname_.Core;
 using TestModule;
 using Xunit;
 
-namespace SimpleModular.Test
+namespace _safeprojectname_.Test
 {
     public class ModuleServiceRegistrationTest
     {
@@ -26,7 +26,7 @@ namespace SimpleModular.Test
         {
             var services = new ServiceCollection();
 
-            var moduleLoader = new ModuleLoder(GetModuleConfig());
+            var moduleLoader = new ModuleLoader(GetModuleConfig());
             //moduleLoader.ConfigureServices(services);
 
             var provider = services.BuildServiceProvider();
