@@ -39,9 +39,7 @@
       "description": "Add projects to solution",
       "manualInstructions": [
         {
-          "text": "Add generated project to solution manually.",
-          "language": "shell",
-          "value": "dotnet sln add \"{{projectName}}/{{projectName}}.csproj\""
+          "text": "Add generated project to solution manually."
         }
       ],
       "args": {
