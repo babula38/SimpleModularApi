@@ -28,5 +28,28 @@
       // "source": "./",
       "target": "./Modules"
     }
+  ],
+  "primaryOutputs": [
+    {
+      "path": "./Modules/_modulename_/_modulename_.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "description": "Add projects to solution",
+      "manualInstructions": [
+        {
+          "text": "Add generated project to solution manually.",
+          "language": "shell",
+          "value": "dotnet sln add \"{{projectName}}/{{projectName}}.csproj\""
+        }
+      ],
+      "args": {
+        // "inRoot": true,
+        "solutionFolder": "Modules"
+      },
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "continueOnError": true
+    }
   ]
 }
