@@ -39,7 +39,7 @@
       "description": "Add projects to solution",
       "manualInstructions": [
         {
-          "text": "Add generated project to solution manually."
+          // "text": "Add generated project to solution manually."
         }
       ],
       "args": {
